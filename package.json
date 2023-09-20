@@ -12,7 +12,8 @@
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "prepare": "husky install",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "test": ""
   },
   "dependencies": {
     "react": "^18.2.0",
