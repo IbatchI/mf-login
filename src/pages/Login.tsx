@@ -5,8 +5,6 @@ import LoginForm from '../components/LoginForm/LoginForm'
 export const Login = () => {
   const [, setUserInfo] = useUserInfo()
 
-  throw new Error('caquita')
-
   const handleSubmit = async ({ userName }: LoginInfo) => {
     // await api.login(email, password)
     // console.log({ userName, password })

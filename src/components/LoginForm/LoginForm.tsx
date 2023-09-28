@@ -1,7 +1,8 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
 
 import { LoginInfo } from '../../types'
-import './LoginForm.scss'
+
+import styles from './LoginForm.module.scss'
 
 interface LoginProps {
   handleSubmit: (arg0: LoginInfo) => Promise<void>
@@ -28,10 +29,22 @@ export const LoginForm = ({ handleSubmit }: LoginProps) => {
   }
 
   return (
-    <form onSubmit={onSubmitLogin}>
-      <input name='username' onChange={onChangeUserName} value={userName} />
-      <input name='password' onChange={onChangePassword} value={password} />
-      <button type='submit'>Log in</button>
+    <form className={styles.form} onSubmit={onSubmitLogin}>
+      <input
+        className={styles.input}
+        name='username'
+        onChange={onChangeUserName}
+        value={userName}
+      />
+      <input
+        className={styles.input}
+        name='password'
+        onChange={onChangePassword}
+        value={password}
+      />
+      <button className={styles.button} type='submit'>
+        Log in
+      </button>
     </form>
   )
 }
