@@ -4,7 +4,6 @@ export interface LoginInfo {
 }
 
 export interface UserInfo {
-  token: string
   id: number
   name: string
   lastaName: string

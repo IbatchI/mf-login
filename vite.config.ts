@@ -11,7 +11,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './Login': './src/pages/Login',
-        './loginStore': './src/store',
+        './AuthStore': './src/utils/AuthStore',
       },
       shared: ['react', 'react-dom'],
     }),
