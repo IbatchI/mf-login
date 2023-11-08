@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "jotai": "^2.4.2",
-    "lh-my-first-storybook": "1.4.1",
+    "lh-my-first-storybook": "1.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.68.0"
