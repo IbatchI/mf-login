@@ -13,7 +13,7 @@ const userInfoKey = 'userInfo'
 export const storageMethods: StorageMethods = {
   // Getters
   getToken: () => localStorage.getItem(accesTokenKey) || '',
-  getUserInfo: () => JSON.parse(localStorage.getItem(userInfoKey) ?? ''),
+  getUserInfo: () => JSON.parse(localStorage.getItem(userInfoKey) ?? 'null'),
 
   // Setters
   setToken: (token: string) => {
