@@ -16,6 +16,16 @@ export default defineConfig({
       shared: ['react', 'react-dom'],
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "../node_modules/bootstrap/scss/bootstrap";
+          @import '../node_modules/lh-my-first-storybook/dist/styles/_variables.scss';
+          `,
+      },
+    },
+  },
   build: {
     modulePreload: false,
     target: 'esnext',

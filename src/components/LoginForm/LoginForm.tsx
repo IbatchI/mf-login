@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
-import { Input } from 'lh-my-first-storybook'
+import { Button, Input } from 'lh-my-first-storybook'
 
 import { LoginInfo } from '../../types'
 
@@ -31,21 +31,11 @@ export const LoginForm = ({ handleSubmit }: LoginProps) => {
 
   return (
     <form className={styles.form} onSubmit={onSubmitLogin}>
-      <Input
-        className={styles.input}
-        name='username'
-        onChange={onChangeUserName}
-        value={userName}
-      />
-      <Input
-        className={styles.input}
-        name='password'
-        onChange={onChangePassword}
-        value={password}
-      />
-      <button className={styles.button} type='submit'>
+      <Input name='username' onChange={onChangeUserName} value={userName} placeholder='Username' />
+      <Input name='password' onChange={onChangePassword} value={password} placeholder='Password' />
+      <Button type='submit' onClick={() => {}}>
         Log in
-      </button>
+      </Button>
     </form>
   )
 }
