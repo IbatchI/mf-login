@@ -1,5 +1,5 @@
 import { Login } from './pages/Login'
-import './App.scss'
+import '../node_modules/lh-my-first-storybook/dist/assets/style.css'
 
 function App() {
   return (

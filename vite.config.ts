@@ -11,21 +11,21 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './Login': './src/pages/Login',
+        './LoginPage2': './src/pages/LoginPage2',
         './AuthStore': './src/utils/AuthStore',
       },
       shared: ['react', 'react-dom'],
     }),
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-          @import "../node_modules/bootstrap/scss/bootstrap";
-          @import '../node_modules/lh-my-first-storybook/dist/styles/_variables.scss';
-          `,
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `
+  //         @import '../node_modules/lh-my-first-storybook/dist/styles/_variables.scss';
+  //         `,
+  //     },
+  //   },
+  // },
   build: {
     modulePreload: false,
     target: 'esnext',

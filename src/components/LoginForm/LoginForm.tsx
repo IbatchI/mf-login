@@ -31,9 +31,9 @@ export const LoginForm = ({ handleSubmit }: LoginProps) => {
 
   return (
     <form className={styles.form} onSubmit={onSubmitLogin}>
-      <Input name='username' onChange={onChangeUserName} value={userName} placeholder='Username' />
-      <Input name='password' onChange={onChangePassword} value={password} placeholder='Password' />
-      <Button type='submit' onClick={() => {}}>
+      <Input name='username' onChange={onChangeUserName} placeholder='Username' value={userName} />
+      <Input name='password' onChange={onChangePassword} placeholder='Password' value={password} />
+      <Button onClick={() => {}} type='submit' variant='danger' width={'100%'}>
         Log in
       </Button>
     </form>
