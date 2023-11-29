@@ -13,19 +13,11 @@ export default defineConfig({
         './Login': './src/pages/Login',
         './LoginPage2': './src/pages/LoginPage2',
         './AuthStore': './src/utils/AuthStore',
+        './LoginRoutes': './src/routes/Routes',
       },
       shared: ['react', 'react-dom'],
     }),
   ],
-  // css: {
-  //   preprocessorOptions: {
-  //     scss: {
-  //       additionalData: `
-  //         @import '../node_modules/lh-my-first-storybook/dist/styles/_variables.scss';
-  //         `,
-  //     },
-  //   },
-  // },
   build: {
     modulePreload: false,
     target: 'esnext',

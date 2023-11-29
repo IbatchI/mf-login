@@ -1,9 +1,9 @@
-import { atom, useAtom } from 'jotai'
+// import { atom, useAtom } from 'jotai'
 
-import { UserInfo } from './types'
+// import { UserInfo } from './types'
 
-const userInfoAtom = atom<UserInfo>({} as UserInfo)
+// const userInfoAtom = atom<UserInfo>({} as UserInfo)
 
-export const useUserInfo = () => useAtom(userInfoAtom)
+// export const useUserInfo = () => useAtom(userInfoAtom)
 
-export default useUserInfo
+// export default useUserInfo
