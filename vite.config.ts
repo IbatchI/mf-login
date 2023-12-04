@@ -9,13 +9,16 @@ export default defineConfig({
     federation({
       name: 'loginApp',
       filename: 'remoteEntry.js',
+      remotes: {
+        host: 'http://localhost:5002/assets/remoteEntry.js',
+      },
       exposes: {
         './Login': './src/pages/Login',
         './LoginPage2': './src/pages/LoginPage2',
         './AuthStore': './src/utils/AuthStore',
         './LoginRoutes': './src/routes/Routes',
       },
-      shared: ['react', 'react-dom'],
+      shared: ['react', 'react-dom', 'react-router-dom'],
     }),
   ],
   build: {

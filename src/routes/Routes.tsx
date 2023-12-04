@@ -37,7 +37,7 @@ export const routes = [
     path: '/detail',
     name: 'Login Page detail',
     Component: Detail,
-    needAuth: false,
+    needAuth: true,
   },
 ] as const
 
